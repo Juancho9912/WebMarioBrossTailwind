@@ -12,7 +12,7 @@ module.exports = {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif']
     },
-    extend: { // https://tailwindcss.com/docs/customizing-colors#color-palette-reference
+    extend: { // https://tailwindcss.com/docs/customizing-colors#color-palette-reference 
       colors: {
         teal: colors.teal, 
         'light-blue': colors.lightBlue,
@@ -53,6 +53,17 @@ module.exports = {
           dark: 'var(--danger-dark)'
         }
         
+      },
+      backgroundImage: theme => ({
+        'wave-pattern': 'url(/resources/views/wave-white.png)',
+        'wave-pattern-dots': 'url(/resources/views/pattern-white-dots.png)',
+        'pattern-characters-red': 'url(/resources/views/pattern-characters-red.png)',
+        'character-mario': 'url(/resources/views/character-l.png)',
+        'wave-pink': 'url(/resources/views/wave-pink.png)',
+        'yellow-dots': 'url(/resources/views/pattern-yellow-dots.png)',
+      }),
+      screens:{
+        'xsm': '320px'
       }
     }
   },
